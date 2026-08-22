@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>My Image Gallery</h1>
+
+  <!-- Category filter buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="people">People</button>
+  </div>
+
+  <!-- Gallery grid -->
+  <  <div class="gallery">
+    <!-- Nature -->
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Mountain landscape" class="nature">
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Forest path" class="nature">
+    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" alt="Mountain lake" class="nature">
+
+    <!-- City -->
+    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop" alt="City skyline at night" class="city">
+    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop" alt="City street" class="city">
+    <img src="https://images.unsplash.com/photo-1493707553966-283afac8c358?w=400&h=300&fit=crop" alt="Modern architecture" class="city">
+
+    <!-- People -->
+    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop" alt="Portrait of a woman" class="people">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Portrait of a man" class="people">
+    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=300&fit=crop" alt="Group of people" class="people">
+  </div>
+
+  <!-- Lightbox (popup viewer) -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="prev-btn" id="prevBtn">&#10094;</span>
+    <img src="" alt="" id="lightbox-img">
+    <span class="next-btn" id="nextBtn">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
